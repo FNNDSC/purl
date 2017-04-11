@@ -11,12 +11,12 @@ def readme():
 
 setup(
       name             =   'pfurl',
-      version          =   '0.13.1',
+      version          =   '0.99.1',
       description      =   '(Python) Process Manager',
       long_description =   readme(),
       author           =   'Rudolph Pienaar',
       author_email     =   'rudolph.pienaar@gmail.com',
-      url              =   'https://github.com/FNNDSC/pman',
+      url              =   'https://github.com/FNNDSC/purl',
       packages         =   ['pfurl'],
       install_requires =   ['pycurl', 'pyzmq', 'webob', 'pudb', 'psutil'],
       test_suite       =   'nose.collector',
