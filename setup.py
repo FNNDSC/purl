@@ -10,7 +10,7 @@ def readme():
         return f.read()
 
 setup(
-      name             =   'purl',
+      name             =   'pfurl',
       version          =   '0.13.1',
       description      =   '(Python) Process Manager',
       long_description =   readme(),
