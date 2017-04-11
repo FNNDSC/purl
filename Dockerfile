@@ -19,8 +19,8 @@ MAINTAINER fnndsc "dev@babymri.org"
 
 RUN apt-get update \
   && apt-get install -y libssl-dev libcurl4-openssl-dev bsdmainutils \
-  && pip3 install pman==0.12.7
+  && pip3 install purl==0.13.1
 
-COPY ./docker-entrypoint.py /root/docker-entrypoint.py
-ENTRYPOINT ["/root/docker-entrypoint.py"]
-EXPOSE 5010 5055
+COPY ./docker-entrypoint.py /dock/docker-entrypoint.py
+RUN chmod 777 /dock && chmod 777 /dock/docker-entrypoint.py
+ENTRYPOINT ["/dock/docker-entrypoint.py"]
