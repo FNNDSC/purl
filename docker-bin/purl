@@ -21,15 +21,6 @@ str_desc = """
         [-c <container>]
         An optional container to use. If not specified, will assume 'fnndsc/pman'.
 
-        [--pman || --pfioh]
-        Dockerized destination services. If either a dockerized 'pman' or 'pfioh'
-        service has been started on the local docker-LAN, then the actual IP and
-        port of the dokcerized service can be self-discovered using either of
-        these optional flags. This saves the caller from explicitly being aware
-        of the service IP:port.
-
-        NOTE: Only useful for a service on the same docker-LAN!
-
         --msg <JSON_payload>
         The JSON formatted string payload to pass through to the underlying
         'purl' executable. This helper script explicitly captures this argument
