@@ -23,9 +23,8 @@ import  codecs
 
 import  pudb
 
-# pman local dependencies
+# purl local dependencies
 from    ._colors         import  Colors
-from    .pfioh           import  *
 from    .message         import  Message
 
 # A global variable that tracks if script was started from CLI or programmatically
@@ -1051,3 +1050,4 @@ class Purl():
 
         if not self.b_quiet: print(Colors.CYAN)
         return(str_stdout)
+    
