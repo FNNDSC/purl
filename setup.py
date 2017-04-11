@@ -10,18 +10,18 @@ def readme():
         return f.read()
 
 setup(
-      name             =   'pman',
-      version          =   '0.12.7',
+      name             =   'purl',
+      version          =   '0.13.1',
       description      =   '(Python) Process Manager',
       long_description =   readme(),
       author           =   'Rudolph Pienaar',
       author_email     =   'rudolph.pienaar@gmail.com',
       url              =   'https://github.com/FNNDSC/pman',
-      packages         =   ['pman'],
+      packages         =   ['purl'],
       install_requires =   ['pycurl', 'pyzmq', 'webob', 'pudb', 'psutil'],
       test_suite       =   'nose.collector',
       tests_require    =   ['nose'],
-      scripts          =   ['bin/crunner', 'bin/pfioh', 'bin/pman', 'bin/purl', 'bin/snode'],
+      scripts          =   ['bin/purl'],
       license          =   'MIT',
       zip_safe         =   False
      )
