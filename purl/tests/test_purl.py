@@ -1,11 +1,9 @@
 from unittest import TestCase
 
-from pman import pman
+from purl import purl
 
-class TestPman(TestCase):
-    def test_pman_constructor(self):
-        myMan = pman(
-            debugFile = '/tmp/debug.file'
-            )
+class TestPurl(TestCase):
+    def test_purl_constructor(self):
+        #myMan = purl()
         # didn't crash
         self.assertTrue(True)
